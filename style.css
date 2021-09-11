@@ -1,0 +1,379 @@
+@charset "UTF-8";
+
+:root{
+    --smokey-topaz: #7E2B09;
+    --burly-wood:  #DFB77E;
+    --charm : #D77186;
+    --charm-pink : #ED91AD;
+    --lavender-pink : #FBB5CD;
+}
+
+@keyframes transitionIn{   
+    
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+
+
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+
+
+    }
+}
+/*For whole transition*/
+.forTransition{
+    animation: transitionIn 0.76s;
+}
+
+
+/*Main Styles*/
+body{
+    font-family: 'Lato', sans-serif !important;
+}
+.checked{
+    color: orange;
+
+}
+.backgroundrev, .hash-list{
+    background-color:var(--lavender-pink) !important;
+}
+
+/*Navbar Style*/
+.navbar-expand-md  { 
+
+    background-color : var(--charm) ;
+}
+.navbar-brand{
+    margin-left:8px;
+}
+.navbar-expand-md .navbar-brand{
+    font-size: 2rem; 
+    font-weight:bold;
+}
+.navbar-expand-md .navbar-nav .nav-item{
+    padding-right:4px;
+    padding-left:4px;
+}
+.navbar-expand-md .navbar-nav .nav-item .nav-link{
+    font-size:1.3rem;
+    color:#fff !important;
+    
+}
+.navbar-expand-md .navbar-nav .nav-item .active{ 
+    color:var(--burly-wood) !important;
+    
+    
+}
+.navbar-expand-md .navbar-nav .nav-item .nav-link:hover{
+    color: var(--burly-wood) !important;
+    transition : color 1s ;
+    border-bottom : 1px solid var(--burly-wood);
+    margin-top:2px; 
+   
+}
+
+/* Reviews */
+.align-center {
+    text-align: center;
+}
+.hash-list {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px){
+    .hash-list.cols-3 > li:nth-last-child(-n+3) {
+        border-bottom: none;
+    }
+}
+@media (min-width: 768px){
+    .hash-list.cols-3 > li {
+        width: 33.3333%;
+    }
+}
+.hash-list > li {
+    display: block;
+    float: left;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.pad-30, .pad-30-all > * {
+    padding: 30px;
+}
+img {
+    border: 0;
+}
+.mgb-20, .mgb-20-all > * {
+    margin-bottom: 20px;
+}
+.wpx-100, .wpx-100-after:after {
+    width: 100px;
+}
+.img-round, .img-rel-round {
+    border-radius: 50%;
+}
+.padb-30, .padb-30-all > * {
+    padding-bottom: 30px;
+}
+
+.mgb-40, .mgb-40-all > * {
+    margin-bottom: 40px;
+}
+.align-center {
+    text-align: center;
+}
+[class*="line-b"] {
+    position: relative;
+    padding-bottom: 20px;
+    border-color: #E6AF2A;
+}
+.fg-text-d, .fg-hov-text-d:hover, .fg-active-text-d.active {
+    color: #222;
+}
+.font-cond-b {
+    font-weight: 700 !important;
+}
+
+/*ShowCase*/
+.showcase{
+    background-color: var(--charm);
+    padding-bottom: 20px;
+}
+.showcase h1{
+    font-size : 3rem !important;
+    font-weight: bold;
+}
+.showcase .content p{
+    font-size:1.2rem;
+}
+.showcase .content .sub-heading{
+    color : var(--burly-wood);
+
+}
+.about .container .btn{
+    background:var(--charm);
+    color:white
+}
+.about .container .btn:hover{
+    background: var(--burly-wood);
+    color:white;
+    transform: 1s color;
+}
+.about .container .about-sub-heading{
+    font-weight:300;
+    font-size:1.2rem;
+}
+
+/* THE MENU.HTML STYLE SHEET*/
+.text-head{
+    position: absolute;
+    
+     top:40%;
+   
+    
+     color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.dehk{
+    width:100%;
+    height:auto;
+}
+.dehko{
+    background: var(--charm);
+}
+
+
+
+/* Locations CSS */
+.bring-down{
+    margin-top:10px;
+   }
+   .card .card-body .btn{
+    background:var(--charm);
+    color:white;
+    
+}
+.card .card-body .btn:hover{
+    background: var(--burly-wood);
+    color:white;
+    transform: 1s color;
+}
+
+.card:hover{
+    background: var(--charm-pink);
+    color: white;
+}
+
+
+/* FOOTER STYLES*/ 
+.site-footer
+{
+  background-color:var(--charm);
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:white;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:var(--burly-wood);
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:var(--charm-pink);
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  color:var(--charm-pink);
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+.footer-bk{
+    background:var(--charm-pink);
+}
